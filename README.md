@@ -14,7 +14,7 @@ Then, you can run `bib2csv.py` using `python` like so:
 python bib2csv.py -inFile=path_to_bib_file -outFile=path_to_export_csv
 ```
 
-Here's a concrete example where `glottolog_source.bib` and is in the same folder as `bib2csv.py`:
+Here's a concrete example of running this script where `glottolog_source.bib` and `bib2csv.py` are in the same directory:
 
 ```
 python bib2csv.py -inFile=glottolog_source.bib -outFile=output.csv
@@ -37,7 +37,7 @@ After the download has finished, use `docker run` with the following parameters:
 - `-inFile`: required command line parameter for `bib2csv.py` to specify the name of the `.bib` file you want to convert
 - `-outFile`: required command line parameter for `bib2.py` to specify the name of the final  `.csv` file
 
-Here's a concrete example of converting [this dataset](https://glottolog.org/meta/downloads) on bibliographic references from minority languages from `.bib` to `.csv`:
+Here's a concrete example of converting `/Users/semiproductive/Documents/glottolog_source.bib` to `output.csv`:
 
 ```python
 docker run -v /Users/semiproductive/Documents:/scripts bib2csv -inFile=glottolog_source.bib -outFile=output.csv
