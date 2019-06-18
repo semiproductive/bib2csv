@@ -39,7 +39,7 @@ After the download has finished, use `docker run` with the following parameters:
 Here's a concrete example of converting `/Users/semiproductive/Documents/test.bib` to `output.csv`:
 
 ```python
-docker run -v /Users/semiproductive/Documents:/scripts bib2csv -inFile=test.bib -outFile=output.csv
+docker run -v /Users/semiproductive/Documents:/scripts semiproductive/bib2csv -inFile=test.bib -outFile=output.csv
 ```
 
 Note that there are 2 key components to the code above (and the order matters):
