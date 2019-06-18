@@ -5,7 +5,7 @@
 First, clone this repo to your local filesystem:
 
 ```
-git clone srinify/bib2csv
+git clone https://github.com/semiproductive/bib2csv
 ```
 
 Then, you can run `bib2csv.py` using `python` like so:
